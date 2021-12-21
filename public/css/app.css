@@ -62,6 +62,7 @@ a {
 
 .main-container {
   background-color: #222222;
+  position: relative;
 }
 
 .main-container .main {
@@ -84,6 +85,7 @@ a {
 .main-container .main .banner h4 {
   color: white;
   font-size: 21px;
+  margin: 0;
 }
 
 .main-container .main .card-container {
@@ -93,13 +95,13 @@ a {
   gap: 10px;
 }
 
-.main-container .main .card {
+.main-container .main .my-card {
   text-align: left;
   flex-basis: calc(16.6666666667% - 20px);
   margin-bottom: 20px;
 }
 
-.main-container .main .card img {
+.main-container .main .my-card img {
   width: 100%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
@@ -109,7 +111,7 @@ a {
   margin-bottom: 6.6666666667px;
 }
 
-.main-container .main .card h5 {
+.main-container .main .my-card h5 {
   color: white;
   font-size: 12px;
 }
@@ -126,6 +128,31 @@ a {
   font-size: 12px;
   font-weight: bold;
   vertical-align: middle;
+}
+
+.main-container .details-container {
+  background-color: #f6f6f6;
+}
+
+.main-container .img-cartoon-container {
+  position: absolute;
+  top: -200px;
+  left: transate(50%);
+  border: 1px solid white;
+}
+
+.main-container .img-cartoon-container .series-tag {
+  background-color: #00a9d9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-container .img-cartoon-container .gallery-tag {
+  background-color: #00a9d9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .main-container .blue-section-container {

@@ -45,12 +45,17 @@ $nav_links = [
 
 
 <header class="main-header">
-    <img class="logo" src="/img/dc-logo.png" alt="dc-logo">
+    <a href="/">
+        <img class="logo" src="/img/dc-logo.png" alt="dc-logo">
+    </a>
     <nav>
         <ul>
             @foreach($nav_links as $link)
+                @php
+                    $prefix = explode('.', $link['route_name'])[0]
+                @endphp
                 <li>
-                    <a href="{{ $link['route_name'] }}">
+                    <a href="{{ $prefix }}">
                         {{ strtoupper($link['text']) }}
                     </a>
                 </li>

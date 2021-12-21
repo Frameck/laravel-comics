@@ -67,6 +67,7 @@ a {
 
 .main-container {
     background-color: rgb(34, 34, 34);
+    position: relative;
 
     .main {
         padding: ($spacing-y * 2) 0;
@@ -84,6 +85,7 @@ a {
             h4 {
                 color: $text-white;
                 font-size: 21px;
+                margin: 0;
             }
         }
 
@@ -94,7 +96,7 @@ a {
             gap: $spacing-x / 2;
         }
 
-        .card {
+        .my-card {
             text-align: left;
             flex-basis: calc(100% / 6 - 20px);
             margin-bottom: $spacing-y;
@@ -125,6 +127,31 @@ a {
                 font-weight: bold;
                 vertical-align: middle;
             }
+        }
+    }
+
+    .details-container {
+        background-color: #f6f6f6;
+    }
+
+    .img-cartoon-container {
+        position: absolute;
+        top: -200px;
+        left: transate(50%);
+        border: 1px solid white;
+        
+        .series-tag {
+            background-color: #00a9d9;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .gallery-tag {
+            background-color: #00a9d9;
+            position: absolute;
+            bottom: 0;
+            left: 0;
         }
     }
 
