@@ -78,7 +78,7 @@
 
             </div>
             <div class="col-5">
-                <h3 class="pb-4 border-bottom">Talent</h3>
+                <h3 class="pb-4 border-bottom">Specs</h3>
                 <div class="d-flex justify-content-between border-bottom align-items-center">
                     <span class="me-auto">Series:</span>
                     <a href="#" class="w-50 m-0 py-2 d-inline-block text-decoration-none">{{ strtoupper($cartoon["series"]) }}</a>
